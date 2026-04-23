@@ -1,0 +1,190 @@
+body{
+  margin:0;
+  font-family:Orbitron, sans-serif;
+  background:black;
+  color:white;
+  padding-top:80px;
+}
+
+/* BACKGROUND */
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-2;
+}
+
+/* SECTION */
+.section{
+  padding:120px 10%;
+  text-align:center;
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+
+h1{
+  font-size:60px;
+  color:#00ffff;
+}
+
+h2{
+  color:#00ffff;
+  margin-bottom:40px;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+#about p{
+  font-size: 30px;
+  color: #b80f3f;
+  max-width:600px;
+  margin:auto;
+  line-height:1.8;
+}
+
+
+.skill{
+  margin:30px auto;
+  max-width:500px;
+  text-align:left;
+}
+
+.bar{
+  width:100%;
+  height:10px;
+  background:#222;
+  border-radius:20px;
+}
+
+.progress{
+  height:10px;
+  background:#00ffff;
+  border-radius:20px;
+  box-shadow:0 0 10px #00ffff;
+}
+
+/* PROJECTS */
+.project-container{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:260px;
+  padding:25px;
+  background:#111;
+  border-radius:15px;
+  box-shadow:0 0 15px #00ffff33;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px #00ffff;
+}
+
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#00ffff;
+  text-decoration:none;
+}
+
+/* CONTACT */
+.contact-form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,textarea{
+  padding:15px;
+  background:#111;
+  border:1px solid #00ffff;
+  color:white;
+  border-radius:10px;
+}
+
+button{
+  padding:15px;
+  background:#00ffff;
+  border:none;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  text-align:center;
+  background:#111;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+/* LOGO */
+.logo{
+  color:#00ffff;
+}
+
+/* HAMBURGER */
+.hamburger{
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+}
+
+.line{
+  width:30px;
+  height:3px;
+  background:#00fff7;
+  margin:5px;
+}
+
+/* MENU (FIXED) */
+.menu{
+  display:none;   /* IMPORTANT */
+  position:absolute;
+  top:70px;
+  right:20px;
+  background:#3484b9;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* MENU ITEMS */
+.menu li{
+  list-style:none;
+  margin:10px 0;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+}
+
+.menu a:hover{
+  color:#00ffff;
+}

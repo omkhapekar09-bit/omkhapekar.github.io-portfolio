@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<!-- STAR BACKGROUND -->
+<canvas id="bg"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Om Khapekar</h2>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- MENU (FIXED: removed inline style) -->
+  <ul class="menu" id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="section hero">
+  <h1>FRONT-END DEVELOPER</h1>
+  <p>Creating immersive web experiences</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Web Developer skilled in building modern,
+    responsive and animated websites using HTML, CSS, JavaScript
+    and React.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>HTML & CSS</p>
+    <div class="bar"><div class="progress" style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div class="progress" style="width:60%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>React</p>
+    <div class="bar"><div class="progress" style="width:40%"></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+    <div class="card">
+      <h3>Gym Website</h3>
+      <p>Responsive gym website with booking system.</p>
+      <a href="https://fitpass.co.in/nagpur" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Weather app using API and JavaScript.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 OM KHAPEKAR
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
